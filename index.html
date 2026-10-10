@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bu Topraklar</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- İlk kare çizilene kadar (kod ~0,5 MB, telefonda birkaç saniye): boş ekran yerine. App ilk karede kaldırır. -->
+    <div id="yukleniyor" style="position:fixed;inset:0;z-index:50;background:#a7d3cf;display:grid;place-items:center;align-content:center;gap:14px;font:800 22px system-ui,-apple-system,sans-serif;color:#2f2a26;transition:opacity 400ms">
+      Bu Topraklar
+      <div style="display:flex;gap:8px">
+        <i style="width:9px;height:9px;border-radius:50%;background:#1f8a8c;animation:yk 1s ease-in-out infinite"></i>
+        <i style="width:9px;height:9px;border-radius:50%;background:#1f8a8c;animation:yk 1s ease-in-out .15s infinite"></i>
+        <i style="width:9px;height:9px;border-radius:50%;background:#1f8a8c;animation:yk 1s ease-in-out .3s infinite"></i>
+      </div>
+      <style>@keyframes yk{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:1;transform:translateY(-4px)}}</style>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  background: #eef0f6;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 500; /* ince yazılar zor okunuyordu */
+}
+
+@keyframes etiket {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes balon {
+  from { opacity: 0; transform: translateY(-40%) scale(0.85); }
+  to { opacity: 1; transform: translateY(-50%) scale(1); }
+}
+@keyframes para {
+  0% { opacity: 0; transform: translateY(10px) scale(0.8); }
+  15% { opacity: 1; transform: translateY(0) scale(1.05); }
+  70% { opacity: 1; transform: translateY(-30px) scale(1); }
+  100% { opacity: 0; transform: translateY(-55px) scale(1); }
+}
+@keyframes nabiz {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+@keyframes giris {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes cevir {
+  0%, 20% { transform: rotate(0deg); }
+  55%, 85% { transform: rotate(-90deg); }
+  100% { transform: rotate(0deg); }
+}
+/* Sinematik (ui/Sinematik.tsx) */
+@keyframes sin-kapan {
+  0% { opacity: 0; }
+  10%, 86% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes sin-belir {
+  0% { opacity: 0; }
+  60%, 100% { opacity: 1; }
+}
+@keyframes sin-dus {
+  from { transform: translateY(0) rotate(0deg); }
+  to { transform: translateY(110vh) rotate(160deg); }
+}
+@keyframes sin-nabiz {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+@keyframes sin-ciz {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes sin-gec {
+  0% { transform: translateX(-140px); }
+  45%, 55% { transform: translateX(calc(82vw - 250px)); }
+  100% { transform: translateX(110vw); }
+}
+@keyframes sin-don {
+  0% { transform: translateX(-140px); }
+  45%, 60% { transform: translateX(calc(82vw - 250px)); }
+  100% { transform: translateX(-160px) scaleX(-1); }
+}
+@keyframes sin-kalk {
+  0%, 45% { transform: rotate(0deg); }
+  55%, 100% { transform: rotate(-75deg); }
+}
+@keyframes sin-damga {
+  0%, 48% { opacity: 0; transform: translate(-50%, -50%) rotate(-8deg) scale(2.2); }
+  56% { opacity: 1; transform: translate(-50%, -50%) rotate(-8deg) scale(0.95); }
+  62%, 100% { opacity: 1; transform: translate(-50%, -50%) rotate(-8deg) scale(1); }
+}
+@keyframes sin-yan {
+  0%, 25% { fill: #f6c9d4; }
+  70%, 100% { fill: #7a5236; }
+}
